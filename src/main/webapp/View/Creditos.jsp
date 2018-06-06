@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="${pageContext.servletContext.contextPath}/view/Creditos.jsp">Créditos<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="${pageContext.servletContext.contextPath}/View/Creditos.jsp">Créditos<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -43,6 +43,7 @@
         <main role="main">
 
             <!-- Main jumbotron for a primary marketing message or call to action -->
+            <a href="../../java/com/dayocreditos/controller/CreditosServlet.java"></a>
             <div class="jumbotron">
                 <div class="container">
                     <div class="row">
@@ -51,59 +52,72 @@
                             <form action="${pageContext.servletContext.contextPath}/CreditosServlet" method="post">
                                 <div class="form-row">
                                     <div class="col">
+                                        <p>Número de crédito
                                         <input name="txtnumerocredito" type="text" class="form-control" placeholder="Número de crédito">
+                                        </p>
                                     </div>
 
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
+                                         <p>Número de documento
                                         <input name="txtdocumento" type="text" class="form-control" placeholder="Documento">
+                                         </p>
                                     </div>
 
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
+                                         <p>Nombres
                                         <input name="txtnombres" type="text" class="form-control" placeholder="Nombres">
+                                         </p>
                                     </div>                
                                     <div class="col">
+                                        <p>Apellidos
                                         <input name="txtapellidos" type="text" class="form-control" placeholder="Apellidos">
+                                        </p>
                                     </div>
-
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
+                                        <p>Monto a prestar
                                         <input name="txtMontoPrestar" type="text" class="form-control" placeholder="Monto a prestar">
+                                        </p>
                                     </div>               
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
+                                        <p>Tipo de trabajador
                                         <select name="txttipotrabajador" >
                                             <option selected value="0"> Elige una opción </option>
                                                 <option value="1">Independiente</option> 
                                                 <option value="2">Dependiente</option> 
                                         </select>
+                                        </p>
                                     </div>               
                                     <div class="col">
+                                        <p>Tipo de crédito
                                         <select name="txtipocredito" >
                                             <option selected value="0"> Elige una opción </option>
                                                 <option value="1">Vivienda</option> 
                                                 <option value="2">Estudio</option> 
                                                 <option value="3">Libre Inversión</option> 
                                         </select>
-
+                                        </p>
                                     </div>
                                      <div class="col">
+                                         <p>¿Trabaja en la empresa?
                                         <select name="txttrabajaempresa" >
                                             <option selected value="0"> Elige una opción </option>
                                                 <option value="1">SI</option> 
                                                 <option value="2">NO</option> 
                                         </select>
-
+                                         </p>
                                     </div>
                                 </div>
 
                                 <div class="form-row">
-                                    <div class="col">
+                                    <div class="col" style="text-align: center;">
                                         <button name="accion" value="crear" type="submit" class="btn btn-primary">Registrar credito</button>
                                     </div>
                                     <div class="col">
@@ -120,10 +134,6 @@
                 </div> <!-- /container -->
             </div>
         </main>
-
-        <footer class="container">
-            <p>&copy; Company 2017-2018</p>
-        </footer>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->

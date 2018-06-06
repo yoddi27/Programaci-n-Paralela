@@ -86,6 +86,55 @@ public class Credito {
     public String getTipoCredito() {
         return tipoCredito;
     }
+        
+    public String getDescripcionTipoCredito(String tipo){
+        switch(tipo){
+            case "1":
+                return "Vivienda";
+            case "2":
+                return "Estudio";
+            case "3":
+                return "Libre Inversión";
+            default:
+                return "sin tipo";
+        }
+    }
+    
+    public String getDescripcionTipoCredito(){
+        switch(this.getTipoCredito()){
+            case "1":
+                return "Vivienda";
+            case "2":
+                return "Estudio";
+            case "3":
+                return "Libre Inversión";
+            default:
+                return "sin tipo";
+        }
+    }
+    
+    public String getDescripcionTipoTrabajador(String tipo){
+        switch(tipo){
+            case "1":
+                return "Independiente";
+            case "2":
+                return "Dependiente";
+            default:
+                return "sin tipo";
+        }
+    }
+    
+    public String getDescripcionTipoTrabajador(){
+        switch(this.getTipoTrabajador()){
+            case "1":
+                return "Independiente";
+            case "2":
+                return "Dependiente";
+            default:
+                return "sin tipo";
+        }
+    }
+    
 
     public void setTipoCredito(String tipoCredito) {
         this.tipoCredito = tipoCredito;
